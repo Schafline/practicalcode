@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import heroBalloons from '../assets/hero-balloons-expanded.jpg';
+---
+
+<div class="hero-container">
+  <Image 
+    src={heroBalloons} 
+    alt="Lift Off With Practical Coding - Take It To The Next Level" 
+    class="hero-img"
+  />
+</div>
+
+<style>
+  .hero-container {
+    width: 100%;
+    max-width: 960px; /* Constrains max width so it fits comfortably on laptops */
+    margin: 2rem auto 2rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto; /* Preserves natural image proportions so text never cuts off */
+    display: block;
+  }
+</style>

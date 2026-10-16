@@ -5,6 +5,7 @@ import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
+import BookBanner from '../../components/BookBanner.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 
 const posts = (await getCollection('blog')).sort(
@@ -42,6 +43,10 @@ const posts = (await getCollection('blog')).sort(
 			}
 			ul li:first-child img {
 				width: 100%;
+				height: 360px;          /* Adjust height to fit your desired layout */
+				object-fit: cover;      /* Crops the edges cleanly to fill the container without stretching */
+				object-position: center; /* Keeps the Railway logo centered */
+				border-radius: 12px;
 			}
 			ul li:first-child .title {
 				font-size: 2.369rem;
@@ -108,6 +113,7 @@ const posts = (await getCollection('blog')).sort(
 					}
 				</ul>
 			</section>
+			<BookBanner />
 		</main>
 		<Footer />
 	</body>

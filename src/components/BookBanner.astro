@@ -1,0 +1,76 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  linkText?: string;
+  bookUrl?: string;
+}
+
+const {
+  title = "Building your first Shopping Basket: A friendly guide to C# and Razor Pages",
+  description = "Enjoyed this guide? Learn how to build complete, production-ready ASP.NET Core applications from scratch with practical, step-by-step code.",
+  linkText = "Get the book on Amazon →",
+  bookUrl = "https://www.amazon.com/dp/B0HFYXBFJ2" // Replace with your Amazon ASIN/link
+} = Astro.props;
+---
+
+<aside class="book-banner">
+  <div class="banner-content">
+    <span class="badge">Practical C# Book</span>
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <a href={bookUrl} target="_blank" rel="noopener noreferrer" class="btn">
+      {linkText}
+    </a>
+  </div>
+</aside>
+
+<style>
+  .book-banner {
+    margin: 2.5rem 0;
+    padding: 1.5rem;
+    background-color: var(--accent-light, #f4f4f5);
+    border-left: 4px solid var(--accent, #2563eb);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent, #2563eb);
+    margin-bottom: 0.5rem;
+  }
+
+  .banner-content h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+
+  .banner-content p {
+    margin: 0 0 1rem 0;
+    font-size: 0.95rem;
+    color: var(--gray, #4b5563);
+    line-height: 1.5;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: var(--accent, #2563eb);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+
+  .btn:hover {
+    background-color: var(--accent-dark, #1d4ed8);
+  }
+</style>

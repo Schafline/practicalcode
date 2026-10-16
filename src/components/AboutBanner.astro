@@ -1,0 +1,102 @@
+---
+---
+
+<div class="about-hero-banner">
+	<div class="portrait-wrapper">
+		<img 
+			src="/print-back-cover-portrait.jpeg" 
+			alt="Jim - Creator of Practical Code" 
+			class="portrait-img"
+		/>
+	</div>
+	<div class="banner-text">
+		<span class="badge">Author & Developer</span>
+		<h1 class="author-name">Jim</h1>
+		<p class="strapline">
+			30+ years of commercial software engineering experience — turning real-world architecture patterns into practical C# and modern web guides.
+		</p>
+	</div>
+</div>
+
+<style>
+	.about-hero-banner {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0284c7 100%);
+		padding: 2rem;
+		border-radius: 12px;
+		color: #ffffff;
+		box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.25);
+		margin-bottom: 2.5rem;
+	}
+
+	.portrait-wrapper {
+		flex-shrink: 0;
+	}
+
+	.portrait-img {
+		width: 140px;
+		height: 140px;
+		object-fit: cover;
+		border-radius: 50%;
+		border: 3px solid rgba(255, 255, 255, 0.2);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+		display: block;
+	}
+
+	.banner-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.badge {
+		display: inline-block;
+		align-self: flex-start;
+		background: rgba(2, 132, 199, 0.3);
+		border: 1px solid rgba(56, 189, 248, 0.4);
+		color: #38bdf8;
+		font-size: 0.8rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		padding: 0.25rem 0.6rem;
+		border-radius: 4px;
+		margin-bottom: 0.5rem;
+	}
+
+	.author-name {
+		font-size: 2rem;
+		font-weight: 700;
+		color: #ffffff;
+		margin: 0 0 0.5rem 0;
+		line-height: 1.1;
+	}
+
+	.strapline {
+		font-size: 1.05rem;
+		line-height: 1.5;
+		color: #cbd5e1;
+		margin: 0;
+	}
+
+	/* Responsive adjustment for mobile screens */
+	@media (max-width: 640px) {
+		.about-hero-banner {
+			flex-direction: column;
+			text-align: center;
+			padding: 1.5rem;
+			gap: 1.25rem;
+		}
+
+		.badge {
+			align-self: center;
+		}
+
+		.portrait-img {
+			width: 120px;
+			height: 120px;
+		}
+	}
+</style>

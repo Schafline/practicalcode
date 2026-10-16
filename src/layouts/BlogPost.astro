@@ -1,15 +1,17 @@
 ---
+import BookBanner from '../components/BookBanner.astro';
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+type Props = Partial<CollectionEntry<'blog'>['data']>;
 
-type Props = CollectionEntry<'blog'>['data'];
+const { title="About", description="", pubDate, updatedDate, heroImage } = Astro.props;
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
+
 
 <html lang="en">
 	<head>
@@ -78,6 +80,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 						<hr />
 					</div>
 					<slot />
+					<BookBanner/>
 				</div>
 			</article>
 		</main>
