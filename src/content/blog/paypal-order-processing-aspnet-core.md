@@ -1,7 +1,7 @@
 ---
 title: "Processing Completed PayPal Orders in ASP.NET Core"
 description: "Learn how to process completed PayPal payments in ASP.NET Core by creating orders, generating verification codes, sending confirmation emails and redirecting customers to an order confirmation page."
-pubDate: "Nov 12 2026"
+pubDate: "Nov 7 2026"
 heroImage: "../../assets/paypal-order-processing-aspnet-core.png"
 ---
 
