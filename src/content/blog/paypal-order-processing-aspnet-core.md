@@ -355,4 +355,4 @@ In this article, we've built on that foundation by introducing the server side p
 
 The techniques shown here provide a practical example of how payment processing, order creation and customer communication can be combined into a cohesive checkout workflow.
 
-In the next article, we'll make use of the verification code generated during checkout to allow customers to retrieve order information and track order status without the need for customer accounts.
+In the [next article](https://www.practicalcode.dev/blog/implementing-order-status-tracking-in-aspnet-core/), we'll make use of the verification code generated during checkout to allow customers to retrieve order information and track order status without the need for customer accounts.
