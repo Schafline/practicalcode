@@ -1,0 +1,118 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import BookBanner from '../../components/BookBanner.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+      		title="Building a Storefront in ASP.NET Core"
+      		description="A practical ASP.NET Core storefront series covering databases, deployment, payments, email and more." />
+	</head>
+	<body>
+		<Header />
+
+		<main class="page-container">
+			<div class="content-body">
+				<h1>Building a Storefront in ASP.NET Core</h1>
+
+				<p>
+                    Building a storefront is an excellent way to explore ASP.NET Core because it combines many of the technologies used in real world applications, including databases, authentication, email services, payment processing and order management.
+                </p>
+
+                <p>
+                    This page brings together a collection of articles based on the storefront application developed throughout <em>Building Your First Shopping Basket</em>. Some articles explore concepts introduced in the book, while others extend the application with additional features and functionality.
+                </p> 
+
+                <p>
+                    Although the articles share a common application and can be read in any order, they are intended as practical reference material rather than a complete step by step guide. Readers looking for a structured walkthrough should refer to the book.
+                </p>
+
+                <p>
+                    The code snippets featured throughout these articles have been extracted from the storefront application's source code. The complete implementation is available in the GitHub repository linked from the site header.
+                </p>
+
+				<h2>Foundation</h2>
+
+				<ul>
+					<li><a href="/blog/migrating-aspnet-core-from-sqlite-to-postgresql/">Migrating ASP.NET Core from SQLite to PostgreSQL</a></li>
+					<li><a href="/blog/deploying-aspnet-core-to-railway">Deploying ASP.NET Core Razor Pages Applications to Railway</a></li>
+					<li><a href="/blog/protecting-an-aspnet-core-admin-area-without-aspnet-identity">Protecting an ASP.NET Core Admin Area Without ASP.NET Identity</a></li>
+				</ul>
+
+				<h2>Customer Communication</h2>
+
+				<ul>
+					<li><a href="/blog/sending-transactional-emails-from-aspnet-core-using-brevo-http-api">Sending Transactional Emails from ASP.NET Core Using Brevo's HTTP API</a></li>
+				</ul>
+
+				<h2>Payments & Orders</h2>
+
+				<ul>
+					<li><a href="/blog/accepting-paypal-payments-in-aspnet-core-using-the-sandbox-environment/">Accepting PayPal Payments in ASP.NET Core Using the Sandbox Environment</a></li>
+					<li><a href="/blog/paypal-order-processing-aspnet-core">Processing Completed PayPal Orders in ASP.NET Core</a></li>
+        			<li><a href="/blog/implementing-order-status-tracking-in-aspnet-core">Implementing Order Status Tracking in ASP.NET Core</a></li>
+				</ul>
+
+                <h2>Planned Articles</h2>
+
+                <ul>
+                <li>Implementing Product Search in ASP.NET Core</li>
+                <li>Adding Pagination to a Product Catalogue</li>
+                <li>Introducing ASP.NET Identity</li>
+                <li>Adding Google Login</li>
+                <li>Customer Accounts</li>
+                </ul>
+			</div>
+			<BookBanner />
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page-container {
+		width: 100%;
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 1.5rem 1rem 4rem 1rem;
+		box-sizing: border-box;
+	}
+
+	.content-body {
+		width: 100%;
+		max-width: 100%;
+		box-sizing: border-box;
+	}
+
+	.content-body {
+		text-align: left;
+	}
+
+	.content-body h2 {
+		font-size: 1.65rem;
+		font-weight: 700;
+		color: #0f172a;
+		margin: 2.25rem 0 1rem 0;
+	}
+
+	.content-body p {
+		font-size: 1.1rem;
+		line-height: 1.7;
+		color: #334155;
+		margin-bottom: 1.25rem;
+	}
+
+	.content-body a {
+		color: #0284c7;
+		text-decoration: underline;
+	}
+
+	.content-body a:hover {
+		color: #0369a1;
+	}
+</style>
