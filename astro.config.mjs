@@ -7,6 +7,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://www.practicalcode.dev',
+	trailingSlash: 'always',
 	integrations: [mdx(), sitemap()],
 	fonts: [
 		{
