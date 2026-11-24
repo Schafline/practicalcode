@@ -53,3 +53,10 @@ const { title, description, image = FallbackImage } = Astro.props;
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <Analytics />
+<!--Google Analytics-->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PHX7RQVL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
