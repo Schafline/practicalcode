@@ -17,6 +17,29 @@ As it turned out, generating a diverse catalogue exposed several issues that mig
 
 Rather than manually creating hundreds of records, I decided to use AI to generate the initial catalogue.
 
+## 1. Why Build a Data Seeding System?
+
+In the previous article, I generated a catalogue containing hundreds of realistic vintage clothing products.
+
+The resulting JSON file solved one problem, but immediately raised another.
+
+Generating the data was only half of the challenge. The application now needed a reliable way to consume that data and populate the database.
+
+For a handful of products, it would have been possible to continue using the seeding approach from *Building Your First Shopping Basket*, manually creating entity instances within the `SeedData` class. However, that approach quickly becomes impractical when working with hundreds of records.
+
+More importantly, I wanted the catalogue data to remain separate from the application code.
+
+Keeping the data in JSON offers several advantages:
+
+- New products can be added without modifying C# code.
+- Seed data can be regenerated or replaced without changing the application.
+- Large datasets become easier to maintain and review.
+- The same approach can be reused for other reference data in the future.
+
+Rather than building a one-off import routine for products, I decided to create a reusable data seeding system capable of loading structured data into the database during application startup.
+
+The first step was ensuring that the application's domain model could accommodate the richer catalogue produced in the previous article.
+
 ---
 
 ## 1. Using AI as a Data Generator
@@ -167,6 +190,8 @@ This was perhaps the most important lesson from the exercise. AI generated the d
 The most successful workflow was not AI replacing the modelling process. It was AI accelerating the modelling process by providing realistic data against which the model could be tested.
 
 Once the catalogue had been generated and refined, the next step was to integrate it into the application's seeding process so that realistic products could be loaded into the database and used throughout the storefront.
+
+I cover that process in more detail in [Building a Data Seeding System in ASP.NET Core](/blog/building-a-data-seeding-system-in-aspnet-core).
 
 ---
 

@@ -206,7 +206,7 @@ else
 
 In this example, the PostgreSQL connection string is supplied through a POSTGRES_CONNECTION environment variable containing a standard Npgsql connection string.
 
-Some hosting providers, including Railway, expose PostgreSQL connection details in URI format (for example, postgres://user:password@host:port/database) rather than as key-value pairs. In these situations, you'll need to convert the URI into a standard Npgsql connection string before calling `UseNpgsql()`. I cover this process in my article [Deploying ASP.NET Core Razor Pages Applications to Railway](https://www.practicalcode.dev/blog/deploying-aspnet-core-to-railway/).
+Some hosting providers, including Railway, expose PostgreSQL connection details in URI format (for example, postgres://user:password@host:port/database) rather than as key-value pairs. In these situations, you'll need to convert the URI into a standard Npgsql connection string before calling `UseNpgsql()`. I cover this process in my article [Deploying ASP.NET Core Razor Pages Applications to Railway](/blog/deploying-aspnet-core-to-railway).
 
 ## 5 Next Steps
 
@@ -214,7 +214,7 @@ At this point, your application is configured to use SQLite during development a
 
 The application is now ready to be deployed to any hosting environment that supports PostgreSQL.
 
-If you're planning to apply migrations automatically during application startup, you'll also need to add the appropriate migration code to Program.cs. I cover this approach in my article [Deploying ASP.NET Core Razor Pages Applications to Railway](https://www.practicalcode.dev/blog/deploying-aspnet-core-to-railway/), where pending migrations are applied automatically whenever the application starts in a Production environment.
+If you're planning to apply migrations automatically during application startup, you'll also need to add the appropriate migration code to Program.cs. I cover this approach in my article [Deploying ASP.NET Core Razor Pages Applications to Railway](/blog/deploying-aspnet-core-to-railway), where pending migrations are applied automatically whenever the application starts in a Production environment.
 
 One final point is worth noting. The PostgreSQL migration generated earlier was created while the application was running in a temporary Production configuration. Once you close the terminal window, those temporary environment variables will be lost and your local development environment will automatically revert to using SQLite.
 

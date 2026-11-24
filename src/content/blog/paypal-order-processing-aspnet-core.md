@@ -5,7 +5,7 @@ pubDate: "Nov 7 2026"
 heroImage: "../../assets/paypal-order-processing-aspnet-core.png"
 ---
 
-The [previous article](https://www.practicalcode.dev/blog/accepting-paypal-payments-in-aspnet-core-using-the-sandbox-environment/) described how to integrate PayPal Sandbox into an ASP.NET Core application and capture a successful payment.
+The [previous article](/blog/accepting-paypal-payments-in-aspnet-core-using-the-sandbox-environment) described how to integrate PayPal Sandbox into an ASP.NET Core application and capture a successful payment.
 
 However, processing a payment is only part of the checkout process. Once PayPal confirms a transaction, we still need to create an order, persist its contents and notify the customer that everything has completed successfully.
 
@@ -258,7 +258,7 @@ With the order saved, the next step is to notify the customer that their purchas
 
 The storefront application uses an email service built on top of Brevo's HTTP API. If you're interested in the implementation details of that service, see my earlier article:
 
-[Sending Transactional Emails from ASP.NET Core Using Brevo's HTTP API](https://www.practicalcode.dev/blog/sending-transactional-emails-from-aspnet-core-using-brevo-http-api/)
+[Sending Transactional Emails from ASP.NET Core Using Brevo's HTTP API](/blog/sending-transactional-emails-from-aspnet-core-using-brevo-http-api)
 
 The exact mechanism used to retrieve the customer's email address will vary depending on the application's design. In the storefront application developed throughout *Building Your First Shopping Basket*, this information was collected earlier in the checkout process and stored as part of the customer's shipping information.
 
@@ -355,4 +355,4 @@ In this article, we've built on that foundation by introducing the server side p
 
 The techniques shown here provide a practical example of how payment processing, order creation and customer communication can be combined into a cohesive checkout workflow.
 
-In the [next article](https://www.practicalcode.dev/blog/implementing-order-status-tracking-in-aspnet-core/), we'll make use of the verification code generated during checkout to allow customers to retrieve order information and track order status without the need for customer accounts.
+In the [next article](/blog/implementing-order-status-tracking-in-aspnet-core), we'll make use of the verification code generated during checkout to allow customers to retrieve order information and track order status without the need for customer accounts.

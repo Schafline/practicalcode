@@ -5,7 +5,7 @@ pubDate: "Nov 10 2026"
 heroImage: "../../assets/order-status-tracking-aspnet-core.png"
 ---
 
-In the [previous article](https://www.practicalcode.dev/blog/paypal-order-processing-aspnet-core/), we generated a unique verification code for each order and included it in the confirmation email. In this article, we'll use that code to allow customers to retrieve order information and track order status without requiring customer accounts.
+In the [previous article](/blog/paypal-order-processing-aspnet-core), we generated a unique verification code for each order and included it in the confirmation email. In this article, we'll use that code to allow customers to retrieve order information and track order status without requiring customer accounts.
 
 The snippets shown throughout this article have been extracted from the storefront application developed throughout *Building Your First Shopping Basket*. If you'd like to explore the complete implementation, the full source code is available in the GitHub repository linked from the site header.
 

@@ -96,7 +96,7 @@ Instead, I chose to store the Client ID using .NET User Secrets.
 
 If you're unfamiliar with User Secrets, see my earlier article:
 
-[Sending Transactional Emails from ASP.NET Core Using Brevo's HTTP API](https://www.practicalcode.dev/blog/sending-transactional-emails-from-aspnet-core-using-brevo-http-api/)
+[Sending Transactional Emails from ASP.NET Core Using Brevo's HTTP API](/blog/sending-transactional-emails-from-aspnet-core-using-brevo-http-api)
 
 where I cover configuring ASP.NET Core to load secrets during development.
 
