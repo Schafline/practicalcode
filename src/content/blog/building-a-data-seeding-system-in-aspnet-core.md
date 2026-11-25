@@ -11,6 +11,8 @@ Generating the data was only part of the challenge, however. To make the catalog
 
 In this article, I'll look at how I built a reusable data seeding system for ASP.NET Core, allowing structured JSON data to be loaded into the application's database during startup. Although the examples focus on products, the same approach can be applied to any type of reference or seed data.
 
+The code for this article is available in the GitHub repository linked from the site header. The completed implementation can be found in the ProductCatalogue tag.
+
 ## 1. Why Build a Data Seeding System?
 
 In the previous article, I used AI to generate a richer, more realistic catalogue of vintage clothing products.
