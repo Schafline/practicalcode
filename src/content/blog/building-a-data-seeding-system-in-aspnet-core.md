@@ -11,7 +11,7 @@ Generating the data was only part of the challenge, however. To make the catalog
 
 In this article, I'll look at how I built a reusable data seeding system for ASP.NET Core, allowing structured JSON data to be loaded into the application's database during startup. Although the examples focus on products, the same approach can be applied to any type of reference or seed data.
 
-The code for this article is available in the GitHub repository linked from the site header. The completed implementation can be found in the ProductCatalogue tag.
+The code for this article is available in the GitHub repository linked from the site header.
 
 ## 1. Why Build a Data Seeding System?
 
@@ -223,7 +223,8 @@ Moving the catalogue into an external JSON file has transformed what was once a 
 
 As the storefront continues to evolve, new products can be added, existing products can be updated and entire catalogues can be regenerated without requiring changes to the application's code. More importantly, the seeding process now mirrors the way real-world data is managed, with content and application logic kept clearly separated.
 
-With a realistic catalogue now flowing into the database, the next challenge is making that data available to customers through product listings, search, filtering and other storefront features.
+With a realistic catalogue now flowing into the database, the storefront has begun to outgrow its original product listing page. In the next article, we'll redesign the catalogue experience around reusable product cards, giving customers access to the richer product metadata we've spent the last couple of articles building:
+[Upgrading an ASP.NET Core Storefront with Reusable Product Cards](/blog/upgrading-an-aspnet-core-storefront-with-reusable-product-cards)
 
 
 
